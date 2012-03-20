@@ -1,0 +1,13 @@
+<h2>home#step1</h2>
+
+<%= render "home/nav" %>
+
+<%= form_tag "/home/step2", :method => "get", :class => "remote" do %>
+  <%= label :first, :name %>
+  <%= text_field :first, :name %>
+  <br />
+  <%= label :last, :name %>
+  <%= text_field :last, :name %>
+
+  <p><%= submit_tag("Go to Step 2") %></p>
+<% end %>
